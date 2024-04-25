@@ -1,0 +1,273 @@
+@font-face {
+	font-family: 'KelsonSans';
+	src: url('/fonts/KelsonSansRU-Light.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'KelsonSansN';
+	src: url('/fonts/KelsonSans-Normal.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'KelsonSansRu';
+	src: url('/fonts/KelsonSansRU-Light.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'KelsonSans', sans-serif;
+}
+*::selection{
+    color: black;
+    background-color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* cursor: none; */
+}
+
+.outer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000000;
+    /* border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  .inner-container {
+    width: 70vw;
+    height: 80vh;
+   
+    background-color: #292929;
+    /* border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 10vh;
+  }
+  .container > h3{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 5vw;
+    letter-spacing: 2px;
+    color: white;
+  }
+  .group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .group > .form-group{
+    width: 18vw;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-width: 0px;
+    border-bottom: 1px solid #ccc;
+    background-color: #292929;
+    
+  }
+  input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none; /* Remove default outline on focus */
+}
+  
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="checkbox"],
+  label{
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: 500;
+  }
+  
+  
+  /* button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+
+  .close-button{
+    border: none;
+    margin-left: 85%;
+    color: white;
+    background-color: #292929;
+    font-size: 60px;
+    width: 5%;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #submitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(196, 196, 196);
+    color: black;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    margin-left: 40%;
+  }
+
+  @media (max-width: 760px) {
+    /* .outer-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      background-color: #000000;
+      } */
+  
+    .inner-container {
+      width: 100%;
+      height: 100%;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 15vw;
+      padding-right: 15vw;
+      padding-top: 10vh;
+      gap: 0vh;
+    }
+    .container > h3{
+      display: flex;
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+      padding-bottom: 5vw;
+      letter-spacing: 2px;
+      color: white;
+    }
+    .group{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .group > .form-group{
+      width: 100%;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      padding-top: 5vh;
+    }
+    
+  
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-width: 0px;
+      border-bottom: 1px solid #ccc;
+      background-color: #292929;
+      
+    }
+    input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: none; /* Remove default outline on focus */
+  }
+    
+    textarea {
+      resize: vertical;
+    }
+  
+    input[type="checkbox"],
+    label{
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .quiry {
+      padding-left: 0% !important;
+    }
+    
+    
+    /* button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    } */
+  
+    .close-button{
+      border: none;
+      margin-left: 85%;
+      color: white;
+      background-color: #292929;
+      font-size: 60px;
+      width: 5%;
+      padding: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    #submitButton{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: rgb(196, 196, 196);
+      color: black;
+      font-weight: 700;
+      border-radius: 5px;
+      border: none;
+      margin-left: 30%;
+    }
+
+  }
+  

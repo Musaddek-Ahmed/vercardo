@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="outer-container">
+  <div class="inner-container">
+    <button class="close-button" onclick="goBack()">&times;</button>
+    <div class="container">
+      <h3>DON'T HESITATE TO GET IN TOUCH WITH US</h3>
+      <form action="#" id="contactForm">
+        <div class="group">
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="_@_._" required>
+              </div>
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+              </div>
+              
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder="PHONE NUMBER" required>
+        </div>
+        
+        <div class="form-group">
+          
+          <textarea id="message" name="message" rows="1" placeholder="MESSAGE" required></textarea>
+        </div>
+        <div class="form-group quiry" style="border-radius: 0; padding-left: 20%;">
+          <input type="checkbox" id="agreeCheckbox">
+          <label for="agreeCheckbox" style="color: white;">By clicking "Send Enquiry" you consent to the <span style="color: rgb(27, 121, 244);">processing of personal data</span></label>
+        </div>
+        <button type="submit" id="submitButton" disabled>Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
